@@ -21,25 +21,25 @@ function playRound(playerSelection, computerSelection) {
     let result 
     
     switch(pointer){
-        case paperrock: result =  "player"
+        case "paperrock": result =  "player"
         break;
-        case paperpaper: result =  "draw"
+        case "paperpaper": result =  "draw"
         break;
-        case paperscissors: result =  "com"
-        break;
-
-        case rockrock: result =  "draw"
-        break;
-        case rockpaper: result =  "com"
-        break;
-        case rockscissors: result =  "player"
+        case "paperscissors": result =  "com"
         break;
 
-        case scissorsrock: result =  "com"
+        case "rockrock": result =  "draw"
         break;
-        case scissorspaper: result =  "player"
+        case "rockpaper": result =  "com"
         break;
-        case scissorsscissors: result =  "draw"
+        case "rockscissors": result =  "player"
+        break;
+
+        case "scissorsrock": result =  "com"
+        break;
+        case "scissorspaper": result =  "player"
+        break;
+        case "scissorsscissors": result =  "draw"
         break;
     }
 
