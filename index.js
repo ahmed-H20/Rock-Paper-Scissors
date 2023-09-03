@@ -1,6 +1,6 @@
 // getComputerChoice
 /* return random ‘Rock’, ‘Paper’ or ‘Scissors’.*/
-function getComputerChoice{
+function getComputerChoice(){
     let comChoice = Math.floor(Math.random() * 3);
 
     if(comChoice == 0){
