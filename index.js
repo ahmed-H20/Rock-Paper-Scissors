@@ -13,12 +13,17 @@ function getComputerChoice(){
     }
 }
 
+let player;
+let computer
+let result;
+let player_score = 0;
+let com_score = 0;
 
-function playRound(playerSelection, computerSelection) {
-    let com = computerSelection.toLowerCase()
-    let player = playerSelection.toLowerCase()
+function playRound() {
+    player = prompt("Enter your choice (paper, rock, scissors): ").toLowerCase();
+    com = getComputerChoice().toLowerCase()    
     let pointer = player + com
-    let result 
+     
     
     switch(pointer){
         case "paperrock": result =  "player"
@@ -44,17 +49,44 @@ function playRound(playerSelection, computerSelection) {
     }
 
     if (result === "player"){
-        return `You Win! ${playerSelection} beats ${computerSelection}`
+        console.log(`You Win! ${player} beats ${com}`)
     }
     else if (result === "com") {
-        return `You Lose! ${playerSelection} beats ${computerSelection}`
+        console.log(`You Lose! ${player} beats ${com}`)
     }
     else if (result === "draw"){
-        return "Draw! You and Computer are equality"
+        console.log("Draw!")
+        
     }
 
 }
+
+function game(){
+    
+    // calculate the points
+    for (let i = 0; i < 5; i++){        
+        playRound();
+        if (result === "player"){
+            player_score++;
+        }
+        else if(result === "com"){
+            com_score++;
+        }
+    }
+    // check the winner and print him    
+    if (player_score > com_score){
+        console.log("congratulations! You are the Winner :)")
+        return;
+    }
+    else if (player_score < com_score){
+        console.log("You are Losser :(")
+        return;
+    }else{
+        console.log("you and computer equaly play one more round to ditermint the winner")
+        return;
+    }  
+    
+}
  
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+
+game()
