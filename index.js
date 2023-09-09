@@ -19,10 +19,10 @@ let result;
 let player_score = 0;
 let com_score = 0;
 
-function playRound() {
-    player = prompt("Enter your choice (paper, rock, scissors): ").toLowerCase();
-    com = getComputerChoice().toLowerCase()    
-    let pointer = player + com
+function playRound(choice) {
+    player = choice.toLowerCase();
+    com = getComputerChoice().toLowerCase();    
+    let pointer = player + com;
      
     
     switch(pointer){
