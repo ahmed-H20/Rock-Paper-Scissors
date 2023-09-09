@@ -60,33 +60,3 @@ function playRound() {
     }
 
 }
-
-function game(){
-    
-    // calculate the points
-    for (let i = 0; i < 5; i++){        
-        playRound();
-        if (result === "player"){
-            player_score++;
-        }
-        else if(result === "com"){
-            com_score++;
-        }
-    }
-    // check the winner and print him    
-    if (player_score > com_score){
-        console.log("congratulations! You are the Winner :)")
-        return;
-    }
-    else if (player_score < com_score){
-        console.log("You are Losser :(")
-        return;
-    }else{
-        console.log("you and computer equaly play one more round to ditermint the winner")
-        return;
-    }  
-    
-}
- 
-
-game()
