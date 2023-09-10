@@ -24,7 +24,9 @@ function playRound(choice) {
     player = choice;
     com = getComputerChoice().toLowerCase();    
     let pointer = player + com;    
-     
+    
+    document.getElementById("player-img").src = photoSelector(player);
+    document.getElementById("computer-img").src = photoSelector(com);
     
     switch(pointer){
         case "paperrock": result =  "player"
@@ -55,7 +57,7 @@ function playRound(choice) {
 
     }
     else if (result === "com") {
-        p_result.textContent =`You Lose! ${player} beats ${com}`;
+        p_result.textContent =`You Lose! ${com} beats ${player}`;
         computerscore.textContent = ++com_score;
     }
     else if (result === "draw"){
@@ -82,14 +84,15 @@ function photoSelector(choice){
     }
     else if(choice == 'scissors'){
         return 'scissors.png';
+    }else{
+        return 'r-p-s.jpg';
     }
 }
 
 const p_result = document.querySelector(".result");
 const playerscore = document.querySelector('.playerscore');
 const computerscore = document.querySelector('.computerscore');
-const player_img = document.querySelector('.player-img');
-const computer_img = document.querySelector('.computer-img');
+
 
 
 
