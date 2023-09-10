@@ -18,11 +18,14 @@ let computer
 let result;
 let player_score = 0;
 let com_score = 0;
+let com_photo,player_photo;
 
 function playRound(choice) {    
     player = choice;
     com = getComputerChoice().toLowerCase();    
     let pointer = player + com;
+
+    
      
     
     switch(pointer){
