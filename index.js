@@ -73,8 +73,16 @@ function playRound(choice) {
 
 }
 
-function photoSelector(){
-
+function photoSelector(choice){
+    if(choice == 'rock'){
+        return 'rock.png';
+    }
+    else if(choice == 'paper'){
+        return 'paper.png';
+    }
+    else if(choice == 'scissors'){
+        return 'scissors.png';
+    }
 }
 
 const p_result = document.querySelector(".result");
