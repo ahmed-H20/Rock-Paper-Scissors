@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.score{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.chosices{
+    margin: 50px 0;
+}
+
+
+button{
+    height: 150px;
+    width: 150px;
+    font-size: large;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+p{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+

@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Rock-Paper-Scissors</h1>
     <div class="score">
         <div class="player-score">
             <h2>player score</h2>
-            <p></p>
+            <p class="playerscore"></p>
         </div>
         <div class="computer-score">
             <h2>computer score</h2>
-            <p></p>
+            <p class="computerscore"></p>
         </div>
     </div>
-    <button id="paper" onClick="playRound(this.id)">paper</button>
-    <button id="rock" onClick="playRound(this.id)">rock</button>
-    <button id="scissors" onClick="playRound(this.id)">scissors</button>
-    <p></p>
+    <div class="chosices">
+        <button id="paper" onClick="playRound(this.id)">paper</button>
+        <button id="rock" onClick="playRound(this.id)">rock</button>
+        <button id="scissors" onClick="playRound(this.id)">scissors</button>
+    </div>
+    <p class="result"></p>
 </body>
 </html>
