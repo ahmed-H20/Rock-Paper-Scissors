@@ -61,5 +61,4 @@ function playRound(choice) {
 
 }
 
-// const btn = document.querySelector("button");
-// btn.addEventListener('click', playRound("paper"));
+
