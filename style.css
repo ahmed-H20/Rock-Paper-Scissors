@@ -1,5 +1,6 @@
 body{
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
@@ -7,19 +8,42 @@ body{
     color: #F9FAF8;
 }
 
+h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+
 .score{
     display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
+    justify-content: space-around;
+    gap: 50px;    
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
 }
 
-.player-score{
+.score div{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    align-items: center;
+    font-size: 32px;
 }
 
-.chosices{
-    margin: 50px 0;
+.score div img{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;   
+}
+
+.result{
+    color:#3882f6;
+    width: 100%;
+    min-height: 50px;    
+    font-size: 2em;
+}
+
+.choices{
+    margin-bottom: 30px;
 }
 
 
@@ -35,15 +59,13 @@ button{
     font-weight: 800;
 }
 
-p{
-    height: 100px;
+p{    
     width: 100%;
-    background-color: red;
-    font-size: 2em;
-    font-weight: 800;    
+    min-height: 50px;    
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;    
 }
 
-.result{
-    align-self: center;
-}
+
 

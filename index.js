@@ -23,9 +23,7 @@ let com_photo,player_photo;
 function playRound(choice) {    
     player = choice;
     com = getComputerChoice().toLowerCase();    
-    let pointer = player + com;
-
-    
+    let pointer = player + com;    
      
     
     switch(pointer){
@@ -72,6 +70,10 @@ function playRound(choice) {
         p_result.textContent = `You are Loser! :(`;
         return
     }
+
+}
+
+function photoSelector(){
 
 }
 
