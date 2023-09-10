@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-   <button id="papre"></button>
-   <button id="rock"></button>
-   <button id="scissors"></button>
+    <h1>Rock-Paper-Scissors</h1>
+    <div class="score">
+        <div class="player-score">
+            <h2>player score</h2>
+            <p></p>
+        </div>
+        <div class="computer-score">
+            <h2>computer score</h2>
+            <p></p>
+        </div>
+    </div>
+    <button id="paper" onClick="playRound(this.id)">paper</button>
+    <button id="rock" onClick="playRound(this.id)">rock</button>
+    <button id="scissors" onClick="playRound(this.id)">scissors</button>
+    <p></p>
 </body>
 </html>
