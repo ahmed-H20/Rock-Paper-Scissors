@@ -49,16 +49,32 @@ function playRound(choice) {
     }
 
     if (result === "player"){
-        console.log(`You Win! ${player} beats ${com}`)
+        p_result.textContent = `You Win! ${player} beats ${com}`;        
+        playerscore.textContent = ++player_score;
+
     }
     else if (result === "com") {
-        console.log(`You Lose! ${player} beats ${com}`)
+        p_result.textContent =`You Lose! ${player} beats ${com}`;
+        computerscore.textContent = ++com_score;
     }
     else if (result === "draw"){
-        console.log("Draw!")
-        
+        p_result.textContent = "Draw!";        
+    }
+
+    if (player_score == 5){
+        p_result.textContent = `You are the Winner! :)`;
+        return;
+    }
+    else if(com_score == 5){
+        p_result.textContent = `You are Loser! :(`;
+        return
     }
 
 }
+
+const p_result = document.querySelector(".result");
+const playerscore = document.querySelector('.playerscore');
+const computerscore = document.querySelector('.computerscore');
+
 
 
