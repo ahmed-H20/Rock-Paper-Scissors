@@ -88,6 +88,8 @@ function photoSelector(choice){
 const p_result = document.querySelector(".result");
 const playerscore = document.querySelector('.playerscore');
 const computerscore = document.querySelector('.computerscore');
+const player_img = document.querySelector('.player-img');
+const computer_img = document.querySelector('.computer-img');
 
 
 
