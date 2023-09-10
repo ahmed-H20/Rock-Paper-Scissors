@@ -66,10 +66,12 @@ function playRound(choice) {
 
     if (player_score == 5){
         p_result.textContent = `You are the Winner! :)`;
+        player_score = 0;
         return;
     }
     else if(com_score == 5){
         p_result.textContent = `You are Loser! :(`;
+        com_score = 0;
         return
     }
 
